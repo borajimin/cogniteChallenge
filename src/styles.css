@@ -1,0 +1,153 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Game {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 0 0;
+  background-color: teal;
+  padding: 2px;
+  min-width: 350px;
+}
+
+.PlayerInfoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: teal;
+  opacity: 0.9;
+  padding: 0 2em 0 2em;
+  border-radius: 30px 30px 0 0;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: teal;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.PlayAgain {
+  background-color: cornflowerblue;
+  padding: 1em;
+  border-radius: 20px;
+  margin-left: 1em;
+}
+
+.PlayAgain:hover,
+.playGame:hover {
+  background-color: rebeccapurple;
+}
+
+.modalBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+  top: 0;
+}
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.numberOfConnect,
+.numberOfPlayers,
+.boardWidth,
+.boardHeight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50vw;
+  min-width: 30vw;
+}
+
+.playGame {
+  background-color: cornflowerblue;
+  padding: 0.5em;
+  border-radius: 20px;
+}
+
+.PlayerInfo {
+  margin-left: 1em;
+  width: 2em;
+  height: 1.5em;
+  border-radius: 5px;
+}
+
+.CircleWrapper {
+  padding: 0.75em;
+}
+
+.hover {
+  background-color: rebeccapurple;
+}
+
+.Circle {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  background-color: teal;
+}
+
+.black {
+  background-color: black;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: palegreen;
+}
+
+.navy {
+  background-color: navy;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80vh;
+}
+
+.rightFooter {
+  background-color: teal;
+  width: 15vw;
+  height: 5vh;
+  border-radius: 0 5px 5px 5px;
+}
+
+.leftFooter {
+  background-color: teal;
+  width: 15vw;
+  height: 5vh;
+  border-radius: 5px 0 5px 5px;
+}
