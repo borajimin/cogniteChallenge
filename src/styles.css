@@ -128,10 +128,6 @@
   background-color: palegreen;
 }
 
-.navy {
-  background-color: navy;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
