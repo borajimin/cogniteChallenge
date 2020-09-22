@@ -34,7 +34,8 @@ class Game extends Component {
       numberOfPlayers: 2,
       boardWidth: 7,
       boardHeight: 6,
-      introVisible: true
+      introVisible: true,
+      useAI: false
     };
   }
 
@@ -194,6 +195,10 @@ class Game extends Component {
     this.setState({ boardHeight: parseInt(event.target.value, 10) });
   };
 
+  toggleUseAI = () => {
+    this.setState({ useAI: !this.state.useAI });
+  };
+
   startGame = () => {
     const { boardWidth, boardHeight } = this.state;
     this.setState({
@@ -262,6 +267,7 @@ class Game extends Component {
       setBoardHeight,
       setBoardWidth,
       setNumberOfPlayers,
+      toggleUseAI,
       startGame
     } = this;
     const currentPlayer = getCurrentPlayer();
@@ -274,6 +280,7 @@ class Game extends Component {
             setNumberOfPlayers={setNumberOfPlayers}
             setBoardHeight={setBoardHeight}
             setBoardWidth={setBoardWidth}
+            toggleUseAI={toggleUseAI}
             startGame={startGame}
           />
         )}

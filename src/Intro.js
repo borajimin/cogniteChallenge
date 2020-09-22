@@ -7,6 +7,7 @@ export default class Intro extends Component {
       setNumberOfPlayers,
       setBoardWidth,
       setBoardHeight,
+      toggleUseAI,
       startGame
     } = this.props;
 
@@ -61,6 +62,9 @@ export default class Intro extends Component {
               <option value={8}>8</option>
               <option value={9}>9</option>
             </select>
+          </div>
+          <div className="toggleUseAI" onClick={toggleUseAI}>
+            Enable AI Players
           </div>
           <div className="playGame" onClick={startGame}>
             <h2>Play Game</h2>
